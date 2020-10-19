@@ -1,0 +1,240 @@
+/* preloader */
+.loader{
+    height: 100%;width: 100%;background: white;position: fixed;
+    top: 0;left: 0;z-index: 9999;
+}
+.loader .inner{
+    width: 100%;height: 100%;
+    background: url("../img/loader.gif") center center no-repeat;
+}
+
+/* dark background */
+.overlay{
+    height: 100%;width: 100%;position: absolute;z-index: 3;
+    background:rgba(0,0,0,0.4);
+}
+
+.titleMessage{
+    position: absolute;
+    z-index: 6;
+    text-align: center;
+    top: 40%;
+    width:100%;
+}
+.titleMessage .heading p{
+    letter-spacing: 7px;
+    font-weight: 100;
+    color: white;
+}
+p.main{
+    font-size: 50px;
+}
+p.sub{
+    font-size: 20px;
+}
+
+.slides-navigation a.prev,
+.slides-navigation a.next{
+    height: 47px;
+    width: 47px;
+    background-size: cover;
+}
+
+.slides-navigation a.next{
+    right: 20px;
+    background-image: url("../img/icons/next.png");
+}
+.slides-navigation a.prev{
+    left: 20px;
+    background-image: url("../img/icons/prev.png");
+}
+.slides-navigation{
+    z-index: 6;
+}
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 0px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+.section{
+    padding: 70px 0px;
+}
+
+/* Navigation bar */
+#navigation{
+    background: #E74C3C;
+    padding: 20px 0;
+}
+#navigation  a{
+    color:white;
+}
+#navbarNav li{
+    padding: 0 10px;
+}
+.navbar-toggler-icon{
+    background: url("../img/icons/menu.png");
+    background-size: cover;
+}
+
+/* Skills section */
+.skillsSection{
+    background: #E74C3C; color: #F5F4F9;;
+}
+.chart{
+    position: relative;height: 152px;width: 152px;display: inline-block;
+}
+canvas{
+    position: absolute;left: 0;
+}
+.percent{
+    color: black;line-height: 152px;font-size: 35px;
+}
+.percent:after{
+    content: '%';
+}
+/* stats */
+.squareItem{
+    position: relative;
+}
+.squareInnerContainer{
+    border: 2px solid black;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border-top: none;
+    margin-bottom: 25px;
+}
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    content: '';
+    border-bottom: 2px solid black;width: 30%;
+    position: absolute;top: 0;
+}
+.squareInnerContainer:before{
+    right: 0;
+}
+.squareInnerContainer:after{
+    left: 0;
+}
+.squareIcon{
+    position: absolute;left: 44%;top: -30px;font-size: 45px;
+}
+h2.counter{
+    color:#E74C3C;
+}
+
+/* get in touch section */
+.getInTouchSection{
+    background: #E74C3C; color: #F5F4F9;
+}
+
+#button input{
+   background-color: #E74C3C;
+   border: 1px solid white;
+   color:white;
+   padding: 5px 10px;
+   margin-top: 10px;
+}
+
+/* portfolio section */
+.heading{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.filter li{
+    display: inline-block;
+    padding: 5px;
+}
+.filter a{
+    color:black;
+    border: 1px solid #C0C0C0;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.filter{
+    text-align: center;
+    width: 100%;
+}
+.filter .current{
+    background: #E74C3C;
+}
+.itemsContainer{
+    width: 100%;
+}
+.items li{
+    float: left;
+    padding: 5px;
+    list-style: none;
+}
+.items .icons{
+    position: absolute;
+    height: 40px;
+    width: 90px;
+    top:50%;
+    left:46%;
+    text-align: center;
+    z-index: 5;
+    margin: -20px auto 0 -40px;
+}
+.items a{
+    background: #E74C3C;
+    color: white;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    position: relative;
+    transition: all 0.2s linear, 1s;
+    opacity: 1;
+}
+.items .imgOverlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+}
+.items .imgOverlay:hover{
+    opacity: 1;
+    transition: all 0.2s linear, 1s;
+}
+.items .searchButton{
+    float: left;
+    left: -300px;
+}
+.items .projectLink{
+    float: right;
+    right: -300px;
+}
+.items .item{
+    position: relative;
+    overflow: hidden;
+}
+.items .item:hover .searchButton{
+    left: 0;
+}
+.items .item:hover .projectLink{
+    right: 0;
+}
+.items .item:hover img{
+    transform: scale(1.05, 1.05);
+    transition: all 0.2s linear, 1s;
+}
+.items{
+    padding: 0;
+}
+.item img{
+    width: 100%;
+}
+/* footer */
+.footer{
+    background-color: #000;
+    color: white;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
